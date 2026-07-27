@@ -22,9 +22,8 @@ Insert your branding in the following places:
 
 - Run Paper server with Gradle
 - Build logic stuffed away in convention plugins
-- Build options configured with `gradle.properties` ([view](./gradle.properties))
 - Dependencies configured with `libs.versions.toml` ([view](./gradle/libs.versions.toml))
-- Auto generate `paper-plugin.yml` ([view](./buildSrc/src/main/kotlin/project.paper-conventions.gradle.kts#L25))
+- Auto generate `paper-plugin.yml` ([view](./paper/build.gradle.kts#L16))
 - Brigadier command setup ([view](./paper/src/main/java/io/github/username/template/command/Command.java))
 - Bootstrapper setup ([view](./paper/src/main/java/io/github/username/template/Bootstrap.java))
 
