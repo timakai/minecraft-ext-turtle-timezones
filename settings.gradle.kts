@@ -1,3 +1,3 @@
-rootProject.name = "template"
+rootProject.name = "minecraft-template-paper"
 
 include("paper")
