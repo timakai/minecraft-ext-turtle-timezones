@@ -1,6 +1,7 @@
 plugins {
     project.java
     project.paper
+    project.aotcache
 }
 
 group = "io.github.username.template"
