@@ -1,6 +1,6 @@
 plugins {
-    project.`java-conventions`
-    project.`paper-conventions`
+    project.java
+    project.paper
 }
 
 group = "io.github.username.template"
