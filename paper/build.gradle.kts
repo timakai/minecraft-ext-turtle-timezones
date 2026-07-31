@@ -28,7 +28,7 @@ sourceSets.main {
             name = "TurtleTimezones"
             version = version
             main = "${group}.Main"
-            bootstrapper = "${group}.Bootstrap"
+            bootstrapper = "${group}.Bootstrapper"
             description = description
             load = BukkitPluginYaml.PluginLoadOrder.STARTUP
             author = "timakai"

@@ -9,7 +9,7 @@ import org.bukkit.plugin.java.*;
 import org.jetbrains.annotations.*;
 
 @SuppressWarnings({"UnstableApiUsage", "unused"})
-public final class Bootstrap implements PluginBootstrap {
+public final class Bootstrapper implements PluginBootstrap {
 
     @Override
     public void bootstrap(@NotNull BootstrapContext context) {
