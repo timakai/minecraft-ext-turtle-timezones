@@ -1,11 +1,11 @@
-package io.github.username.template;
+package me.timakai.minecraft.ext.turtle.timezones;
 
-import io.github.username.template.command.*;
 import io.papermc.paper.plugin.bootstrap.*;
 import io.papermc.paper.plugin.lifecycle.event.*;
 import io.papermc.paper.plugin.lifecycle.event.handler.configuration.*;
 import io.papermc.paper.plugin.lifecycle.event.types.*;
 import java.util.concurrent.*;
+import me.timakai.minecraft.ext.turtle.timezones.command.*;
 import org.bukkit.plugin.java.*;
 import org.jetbrains.annotations.*;
 
@@ -19,7 +19,7 @@ public final class Bootstrap implements PluginBootstrap {
     }
 
     private static LifecycleEventHandlerConfiguration<@NotNull LifecycleEventOwner> createCommandsEventHandler() {
-        var command = CompletableFuture.supplyAsync(Command::create);
+        var command = CompletableFuture.supplyAsync(TimezoneCommand::create);
         return LifecycleEvents.COMMANDS.newHandler(event -> event.registrar().register(command.join()));
     }
 

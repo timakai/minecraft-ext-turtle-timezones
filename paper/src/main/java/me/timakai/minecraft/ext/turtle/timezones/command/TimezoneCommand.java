@@ -1,16 +1,16 @@
-package io.github.username.template.command;
+package me.timakai.minecraft.ext.turtle.timezones.command;
 
 import com.mojang.brigadier.builder.*;
 import com.mojang.brigadier.tree.*;
 import io.papermc.paper.command.brigadier.*;
 
-public interface Command {
+public interface TimezoneCommand {
 
     static LiteralCommandNode<CommandSourceStack> create() {
         return root().build();
     }
 
     static LiteralArgumentBuilder<CommandSourceStack> root() {
-        return Commands.literal("template");
+        return Commands.literal("timezone");
     }
 }

@@ -1,3 +1,3 @@
-rootProject.name = "minecraft-template-paper"
+rootProject.name = "minecraft-ext-turtle-timezones"
 
 include("paper")
