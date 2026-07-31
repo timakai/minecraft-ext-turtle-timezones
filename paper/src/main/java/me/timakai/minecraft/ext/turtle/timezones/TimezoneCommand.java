@@ -1,4 +1,4 @@
-package me.timakai.minecraft.ext.turtle.timezones.command;
+package me.timakai.minecraft.ext.turtle.timezones;
 
 import com.mojang.brigadier.builder.*;
 import com.mojang.brigadier.tree.*;
