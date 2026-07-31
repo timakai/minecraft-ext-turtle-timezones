@@ -29,6 +29,7 @@ sourceSets.main {
             version = "${project.version}"
             main = "${group}.Main"
             bootstrapper = "${group}.Bootstrapper"
+            loader = "${group}.Loader"
             description = project.description
             load = BukkitPluginYaml.PluginLoadOrder.STARTUP
             author = "timakai"
