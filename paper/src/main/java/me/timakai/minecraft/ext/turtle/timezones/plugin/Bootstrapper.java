@@ -1,10 +1,11 @@
-package me.timakai.minecraft.ext.turtle.timezones;
+package me.timakai.minecraft.ext.turtle.timezones.plugin;
 
 import io.papermc.paper.plugin.bootstrap.*;
 import io.papermc.paper.plugin.lifecycle.event.*;
 import io.papermc.paper.plugin.lifecycle.event.handler.configuration.*;
 import io.papermc.paper.plugin.lifecycle.event.types.*;
 import java.util.concurrent.*;
+import me.timakai.minecraft.ext.turtle.timezones.*;
 import org.bukkit.plugin.java.*;
 import org.jetbrains.annotations.*;
 

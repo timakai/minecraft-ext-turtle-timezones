@@ -1,4 +1,4 @@
-package me.timakai.minecraft.ext.turtle.timezones;
+package me.timakai.minecraft.ext.turtle.timezones.plugin;
 
 import io.papermc.paper.plugin.loader.*;
 import io.papermc.paper.plugin.loader.library.impl.*;

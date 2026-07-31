@@ -1,4 +1,4 @@
-package me.timakai.minecraft.ext.turtle.timezones;
+package me.timakai.minecraft.ext.turtle.timezones.plugin;
 
 import lombok.*;
 import net.kyori.adventure.text.logger.slf4j.*;
