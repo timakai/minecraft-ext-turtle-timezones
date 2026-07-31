@@ -11,6 +11,10 @@ description = "Minecraft extension that adds time zone features."
 group = "me.timakai.minecraft.ext.turtle.timezones"
 version = "2026.1"
 
+dependencies {
+    implementation("org.jdbi:jdbi3-core:3.54.0")
+}
+
 tasks {
     runServer {
         version = "26.2"
