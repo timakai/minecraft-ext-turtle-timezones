@@ -5,6 +5,7 @@ plugins {
     project.java
     project.paper
     project.aotcache
+    project.lombok
 }
 
 description = "Minecraft extension that adds time zone features."
