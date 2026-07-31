@@ -26,10 +26,10 @@ sourceSets.main {
         paperPluginYaml {
             apiVersion = "26.2"
             name = "TurtleTimezones"
-            version = version
+            version = "${project.version}"
             main = "${group}.Main"
             bootstrapper = "${group}.Bootstrapper"
-            description = description
+            description = project.description
             load = BukkitPluginYaml.PluginLoadOrder.STARTUP
             author = "timakai"
             website = "https://github.com/timakai/minecraft-ext-turtle-timezones"
