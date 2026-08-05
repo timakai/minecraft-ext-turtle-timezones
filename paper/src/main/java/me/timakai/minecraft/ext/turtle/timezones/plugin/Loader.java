@@ -7,11 +7,12 @@ import org.eclipse.aether.graph.*;
 import org.eclipse.aether.repository.*;
 import org.jspecify.annotations.*;
 
+@NullMarked
 @SuppressWarnings({"UnstableApiUsage", "unused"})
 public final class Loader implements PluginLoader {
 
     @Override
-    public void classloader(@NonNull PluginClasspathBuilder classpathBuilder) {
+    public void classloader(PluginClasspathBuilder classpathBuilder) {
         var defaultRepositoryMirror = new RemoteRepository.Builder("central", "default", MavenLibraryResolver.MAVEN_CENTRAL_DEFAULT_MIRROR).build();
         var resolver = new MavenLibraryResolver();
 
