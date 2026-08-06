@@ -4,9 +4,12 @@ import io.papermc.paper.plugin.bootstrap.*;
 import io.papermc.paper.plugin.lifecycle.event.*;
 import io.papermc.paper.plugin.lifecycle.event.handler.configuration.*;
 import io.papermc.paper.plugin.lifecycle.event.types.*;
+import java.nio.file.*;
 import java.util.concurrent.*;
 import me.timakai.minecraft.ext.turtle.timezones.*;
+import me.timakai.minecraft.ext.turtle.timezones.core.*;
 import org.bukkit.plugin.java.*;
+import org.jdbi.v3.core.*;
 import org.jspecify.annotations.*;
 
 @NullMarked
@@ -26,6 +29,12 @@ public final class Bootstrapper implements PluginBootstrap {
 
     @Override
     public JavaPlugin createPlugin(PluginProviderContext context) {
-        return new Main(context.getLogger());
+        Path storePath = context.getDataDirectory().resolve("store.db");
+        String connectionString = "jdbc:sqlite:" + storePath;
+        
+        Jdbi jdbi = Jdbi.create(connectionString);
+        JdbiConfig.applyTo(jdbi);
+
+        return new Main(context.getLogger(), jdbi);
     }
 }
