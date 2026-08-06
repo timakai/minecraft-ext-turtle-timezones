@@ -13,9 +13,9 @@ group = "me.timakai.minecraft.ext.turtle.timezones"
 version = "2026.1"
 
 dependencies {
-    implementation("org.jdbi:jdbi3-core:3.54.0")
-    implementation("org.jdbi:jdbi3-sqlobject:3.54.0")
-    annotationProcessor("org.jdbi:jdbi3-generator:3.54.0")
+    implementation(libs.jdbi3Core)
+    implementation(libs.jdbi3SQLObject)
+    annotationProcessor(libs.jdbi3Generator)
 }
 
 tasks {
