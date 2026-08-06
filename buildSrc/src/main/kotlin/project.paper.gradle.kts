@@ -1,7 +1,7 @@
 plugins {
     java
-    alias(libs.plugins.runPaper)
-    alias(libs.plugins.resourceFactory)
+    alias(libs.plugins.paper.run)
+    alias(libs.plugins.resource.factory)
 }
 
 repositories {
@@ -11,5 +11,5 @@ repositories {
 }
 
 dependencies {
-    compileOnly(libs.paperApi)
+    compileOnly(libs.paper.api)
 }
