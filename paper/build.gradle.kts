@@ -14,6 +14,7 @@ version = "2026.1"
 
 dependencies {
     implementation(libs.jdbi3.core)
+    implementation(libs.jdbi3.sqlite)
     implementation(libs.jdbi3.sqlobject)
     annotationProcessor(libs.jdbi3.generator)
 }

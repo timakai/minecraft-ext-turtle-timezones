@@ -7,6 +7,7 @@ jdbi = "3.54.0"
 [libraries]
 paper-api = { module = "io.papermc.paper:paper-api", version.ref = "paper-api" }
 jdbi3-core = { module = "org.jdbi:jdbi3-core", version.ref = "jdbi" }
+jdbi3-sqlite = { module = "org.jdbi:jdbi3-sqlite", version.ref = "jdbi" }
 jdbi3-sqlobject = { module = "org.jdbi:jdbi3-sqlobject", version.ref = "jdbi" }
 jdbi3-generator = { module = "org.jdbi:jdbi3-generator", version.ref = "jdbi" }
 
